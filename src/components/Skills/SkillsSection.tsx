@@ -1,4 +1,4 @@
-import './Skills.css';
+import './SkillsSection.css';
 import DotnetLogo from '../../assets/dotnet.svg';
 import HtmlLogo from '../../assets/html.svg';
 import CssLogo from '../../assets/css.svg';
@@ -10,7 +10,7 @@ import GithubLogo from '../../assets/github.svg';
 import SqlLogo from '../../assets/sql.svg';
 import PowerbiLogo from '../../assets/powerbi.svg';
 
-function Skills() {
+function SkillsSection() {
     return (
         <section id="Habilidades" className="skills-container">
             <h2 className="skills-title">Habilidades</h2>
@@ -60,4 +60,4 @@ function Skills() {
     );
 }
 
-export default Skills
+export default SkillsSection
