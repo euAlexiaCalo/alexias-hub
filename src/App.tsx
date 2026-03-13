@@ -1,4 +1,5 @@
-import About from './components/Initial/Initial'
+import InitialSection from './components/Initial/InitialSection'
+import SkillsSection from './components/Skills/SkillsSection'
 import './App.css'
 import Header from './components/Header/Header'
 
@@ -7,7 +8,8 @@ function App() {
     <>
       <Header />
       <main>
-        <About />
+        <InitialSection />
+        <SkillsSection />
       </main>
     </>
   )

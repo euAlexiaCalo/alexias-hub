@@ -31,7 +31,7 @@ header {
     -webkit-text-fill-color: transparent;
     color: transparent;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: all 0.3s linear;
 }
 
 .nav-logo:hover {
@@ -49,7 +49,7 @@ header {
     display: inline-block;
     text-decoration: none;
     color: var(--text-header);
-    transition: transform 0.3s;
+    transition: all 0.3s linear;
 }
 
 .nav-link:hover {

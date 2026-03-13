@@ -74,13 +74,16 @@
   --color-neutral-900: #030213;
 
   /* BACKGROUNDS */
+  --bg-default: var(--color-neutral-200);
   --bg-page: var(--color-white);
   --bg-header: color-mix(in srgb, var(--color-white), transparent 20%);
   --bg-section-initial: linear-gradient(135deg,
-      color-mix(in srgb, var(--color-purple-200), white 80%),
+      color-mix(in srgb, var(--color-purple-200), var(--color-white) 80%),
       var(--color-white),
-      color-mix(in srgb, var(--color-blue-200), white 80%));
-  --bg-section-skills: var(--color-neutral-50);
+      color-mix(in srgb, var(--color-blue-200), var(--color-white) 80%));
+  --bg-section-skills: linear-gradient(90deg,
+      color-mix(in srgb, var(--color-purple-200), var(--color-white) 80%),
+      color-mix(in srgb, var(--color-blue-200), var(--color-white) 80%));
   --bg-section-projects: var(--color-white);
 
   /* Cards, Elementos e Estados */
@@ -94,6 +97,7 @@
   --text-white: var(--color-white);
   --text-black: var(--color-black);
   --text-purple-600: var(--color-purple-600);
+  --text-blue-600: var(--color-blue-600);
   --text-header: var(--color-neutral-700);
   --text-header-hover: var(--color-purple-500);
   --text-main: var(--color-neutral-900);
@@ -103,19 +107,21 @@
   --border-outline: var(--color-neutral-400);
   --border-badge: var(--color-purple-600);
   --border-purple-600: var(--color-purple-600);
+  --border-card-build: var(--color-purple-200);
+  --border-card-data: var(--color-blue-200);
 
   /* --- GRADIENTES --- */
   --gradient-purple-blue: linear-gradient(135deg, var(--color-purple-500), var(--color-purple-400), var(--color-blue-500));
   --gradient-blue-purple: linear-gradient(135deg, var(--color-blue-500), var(--color-purple-500));
 
   /* Botões */
-  --gradient-btn-primary: linear-gradient(90deg, var(--color-purple-500), var(--color-blue-500));
+  --gradient-btn-primary: linear-gradient(90deg, var(--color-purple-600), var(--color-blue-500));
   --gradient-btn-blue: linear-gradient(90deg, var(--color-blue-400), var(--color-blue-600));
   --gradient-btn-green: linear-gradient(90deg, var(--color-green-500), var(--color-green-600));
-  --gradient-btn-purple-pink: linear-gradient(90deg, #a855f7, var(--color-pink-500));
+  --gradient-btn-purple-pink: linear-gradient(90deg, var(--color-purple-400), var(--color-pink-500));
 
   /* Rodapé */
-  --gradient-footer: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e1b4b 100%);
+  --gradient-footer: linear-gradient(135deg, var(--color-indigo-950) 0%, var(--color-indigo-900) 50%, var(--color-indigo-950) 100%);
 
   /* --- HABILIDADES (Progress Bars) --- */
   --bar-bg: var(--color-neutral-200);

@@ -1,28 +1,112 @@
-.skills-container {
+.Skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: var(--bg-section-skills);
+}
+
+.Skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 1860px;
+    padding: 80px 60px;
+}
+
+.Skills-title {
+    font-size: 3rem;
+    font-weight: bold;
+    background: var(--gradient-purple-blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills-text {
+    font-size: 1.2rem;
+    color: var(--text-body);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.Skills-cards-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.skills-cards {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
+    background: var(--bg-card);
+    width: 100%;
+    max-width: 480px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
 }
 
-.skills-title {
+.card-build {
+    border: 1px solid var(--border-card-build);
+}
+
+.card-data {
+    border: 1px solid var(--border-card-data);
+}
+
+.skills-card-title {
     font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 2rem;
 }
 
-.skills-list {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    flex-wrap: wrap;
-    list-style: none;
+.title-data {
+    color: var(--text-blue-600);
 }
 
-.skills-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    background-color: var(--color-tertiary-bg);
-    padding: 8px 16px;
-    border-radius: 10px;
+.title-build {
+    color: var(--text-purple-600);
+}
+
+.skills-card-text {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 18px;
+}
+
+.bi-lightning-charge {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    fill: currentColor;
+    width: 80px;
+    height: 80px;
+    color: var(--text-purple-600);
+    background-color: var(--text-white);
+    border: 1px solid var(--border-default);
+    border-radius: 50%;
+    padding: 16px;
+    box-shadow: var(--card-shadow);
+    /* Nome | Duração | Curva de tempo | Delay | Repetição | Direção */
+    animation: circleSpin infinite linear 8s normal none;
+}
+
+@keyframes circleSpin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+        color: var(--text-blue-600);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }

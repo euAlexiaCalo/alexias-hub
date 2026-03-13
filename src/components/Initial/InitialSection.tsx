@@ -1,4 +1,4 @@
-import './Initial.css';
+import './InitialSection.css';
 import Alexia from '../../assets/alexia-foto.svg';
 
 function About() {

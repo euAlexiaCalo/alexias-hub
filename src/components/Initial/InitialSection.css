@@ -100,7 +100,7 @@
     padding: 12px 24px;
     border-radius: 32px;
     background: var(--gradient-btn-primary);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s linear;
 }
 
 .initial-button-projects:hover {
@@ -123,7 +123,7 @@
     border: 2px solid var(--border-purple-600);
     border-radius: 32px;
     background: var(--gradient-btn-secondary);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s linear;
 }
 
 .initial-button-contact:hover {

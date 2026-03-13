@@ -1,62 +1,36 @@
 import './SkillsSection.css';
-import DotnetLogo from '../../assets/dotnet.svg';
-import HtmlLogo from '../../assets/html.svg';
-import CssLogo from '../../assets/css.svg';
-import JsLogo from '../../assets/javascript.svg';
-import ReactLogo from '../../assets/react.svg';
-import TsLogo from '../../assets/typescript.svg';
-import GitLogo from '../../assets/git.svg';
-import GithubLogo from '../../assets/github.svg';
-import SqlLogo from '../../assets/sql.svg';
-import PowerbiLogo from '../../assets/powerbi.svg';
+import { SkillBar } from './SkillBar';
 
 function SkillsSection() {
     return (
-        <section id="Habilidades" className="skills-container">
-            <h2 className="skills-title">Habilidades</h2>
-            <ul className="skills-list">
-                <li className="skills-item">
-                    <img src={DotnetLogo} alt='Logo do .NET' className='skills-logo' />
-                    <span className='skills-name'>.NET</span>
-                </li>
-                <li className="skills-item">
-                    <img src={HtmlLogo} alt="Logo do HTML" className='skills-logo' />
-                    <span>HTML</span>
-                </li>
-                <li className="skills-item">
-                    <img src={CssLogo} alt="Logo do CSS" className='skills-logo' />
-                    <span className='skills-name'>CSS</span>
-                </li>
-                <li className="skills-item">
-                    <img src={JsLogo} alt="Logo do JavaScript" className='skills-logo' />
-                    <span className='skills-name'>JavaScript</span>
-                </li>
-                <li className="skills-item">
-                    <img src={ReactLogo} alt="Logo do React" className='skills-logo' />
-                    <span className='skills-name'>React</span>
-                </li>
-                <li className="skills-item">
-                    <img src={TsLogo} alt="Logo do TypeScript" className='skills-logo' />
-                    <span className='skills-name'>TypeScript</span>
-                </li>
-                <li className="skills-item">
-                    <img src={GitLogo} alt="Logo do Git" className='skills-logo' />
-                    <span className='skills-name'>Git</span>
-                </li>
-                <li className="skills-item">
-                    <img src={GithubLogo} alt="Logo do GitHub" className='skills-logo' />
-                    <span className='skills-name'>GitHub</span>
-                </li>
-                <li className="skills-item">
-                    <img src={SqlLogo} alt="Logo do SQL" className='skills-logo' />
-                    <span className='skills-name'>SQL</span>
-                </li>
-                <li className="skills-item">
-                    <img src={PowerbiLogo} alt="Logo do Power BI" className='skills-logo' />
-                    <span className='skills-name'>Power BI</span>
-                </li>
-            </ul>
-        </section>
+        <div className="Skills">
+            <section id='Habilidades' className="Skills-container">
+                <h1 className="Skills-title">Habilidades</h1>
+                <p className='skills-text'>Dois mundos conectados: construindo aplicações e extraindo inteligência dos dados</p>
+                <div className="Skills-cards-container">
+                    <div className='skills-cards card-build'>
+                        <h2 className="skills-card-title title-build">Construção</h2>
+                        <p className='skills-card-text'>Desenvolvimento Full-Stack</p>
+                        <SkillBar label="HTML" targetValue={70} color="var(--bar-html)" />
+                        <SkillBar label="CSS" targetValue={65} color="var(--bar-css)" />
+                        <SkillBar label="JavaScript" targetValue={60} color="var(--bar-js)" />
+                        <SkillBar label="React" targetValue={50} color="var(--bar-react)" />
+                        <SkillBar label="TypeScript" targetValue={40} color="var(--bar-ts)" />
+                        <SkillBar label=".NET" targetValue={40} color="var(--bar-dotnet)" />
+                        <SkillBar label="C#" targetValue={45} color="var(--bar-csharp)" />
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="bi bi-lightning-charge" viewBox="0 0 16 16">
+                        <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41z" />
+                    </svg>
+                    <div className='skills-cards card-data'>
+                        <h2 className='skills-card-title title-data'>Análises</h2>
+                        <p className='skills-card-text'>Business Intelligence</p>
+                        <SkillBar label="SQL Server" targetValue={50} color="var(--bar-sql)" />
+                        <SkillBar label="Power BI" targetValue={40} color="var(--bar-pbi)" />
+                    </div>
+                </div>
+            </section>
+        </div>
     );
 }
 
